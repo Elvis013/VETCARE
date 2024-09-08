@@ -1,6 +1,8 @@
 package com.example.vetcare.actividades;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ProgressBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.vetcare.R;
 
 public class InicioActivity extends AppCompatActivity {
-
+    ProgressBar barCarga;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,5 +24,24 @@ public class InicioActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        barCarga = findViewById(R.id.iniBarCarga);
+        Thread tCarga =new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < barCarga.getMax(); i++) {
+                    barCarga.setProgress(i);
+                    try{
+                        Thread.sleep(50);
+                    }catch (InterruptedException e){
+                        throw new RuntimeException(e);
+                    }
+                }
+                //llamar a la otra actividad
+                Intent sesion = new Intent(getApplicationContext(), SesionActivity.class);
+                startActivity(sesion);
+                finish();
+            }
+        });
+        tCarga.start();
     }
 }
