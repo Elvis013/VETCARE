@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">VETCARE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Usuario-->
+    <string name="regTxtNombre">Nombres</string>
+    <string name="regTxtApellido">Apellidos</string>
+    <string name="regTxtTelefono">Número de teléfono</string>
+    <string name="regTxtCorreo">Correo electrónico</string>
+    <!--Mascota-->
+    <string name="regTxtNombreMascota">Nombre</string>
+    <string name="regTxtEdadMascota">Edad</string>
+    <string-array name="opciones_lista">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="regTxtRazaMascota">Raza</string>
+
 </resources>
