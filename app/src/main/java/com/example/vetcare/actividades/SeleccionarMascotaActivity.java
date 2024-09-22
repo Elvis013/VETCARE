@@ -35,7 +35,7 @@ public class SeleccionarMascotaActivity extends AppCompatActivity {
         recyclerViewMascotas = findViewById(R.id.recyclerSeleccionMascota);
         recyclerViewMascotas.setLayoutManager(new LinearLayoutManager(this));
 
-        // Carga la lista de mascotas (puede venir de una base de datos o de otra fuente)
+        // Carga la lista de mascotas
         listaMascotas = obtenerListaDeMascotas();
 
         // Configura el adapter
@@ -43,12 +43,11 @@ public class SeleccionarMascotaActivity extends AppCompatActivity {
         recyclerViewMascotas.setAdapter(mascotaAdapter);
     }
 
-    // Método que crea una lista de mascotas (puedes reemplazar esto con datos reales)
+    // Método que crea una lista de mascotas (usado solo para simulación)
     private List<Mascota> obtenerListaDeMascotas() {
         List<Mascota> mascotas = new ArrayList<>();
-        mascotas.add(new Mascota("Max", R.drawable.perro1_95x70));  // Asegúrate de tener imágenes en res/drawable
-        mascotas.add(new Mascota("Luna", R.drawable.gato1_95x70));
-        // Agrega más mascotas según sea necesario
+        mascotas.add(new Mascota("Max", R.drawable.perro1_95x70));
+        mascotas.add(new Mascota("Wilson", R.drawable.gato1_95x70));
         return mascotas;
     }
 }
