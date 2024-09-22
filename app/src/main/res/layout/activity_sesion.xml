@@ -6,5 +6,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".actividades.SesionActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo">
+    </ImageView>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginVertical="15dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logTxtCorreo"
+            android:hint="@string/logTxtCorreo"
+            android:inputType="textEmailAddress">
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logTxtClave"
+            android:hint="@string/logTxtClave"
+            android:inputType="textPassword">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logChkRecordar"
+        android:text="@string/logChkRecordar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LogBtnIngresar"
+            android:text="@string/logBtnIngresar"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LogBtnRegistrate"
+            android:text="@string/logBtnRegistrate"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false">
+        </Button>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logLblOlvidateContraseña"
+        android:text="@string/logLblOlvidasteContraseña"
+        android:gravity="center"
+        android:textColor="@color/purple_700">
+
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogBtnSOS"
+        android:text="@string/logBtnSOS"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/alerta">
+    </Button>
+
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

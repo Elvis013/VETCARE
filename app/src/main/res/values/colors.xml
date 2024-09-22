@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="barra">#b93abb</color>
     <color name="titulo">#232323</color>
+    <color name="alerta">#FF0000</color>
 </resources>

@@ -16,5 +16,22 @@
         <item>Otro</item>
     </string-array>
     <string name="regTxtRazaMascota">Raza</string>
-
+    <!--secion-->
+    <string name="logTxtCorreo">Correo</string>
+    <string name="logTxtClave">Contraseña</string>
+    <string name="logBtnIngresar">Ingresar</string>
+    <string name="logBtnRegistrate">Registrate</string>
+    <string name="logChkRecordar">Recordar sesión</string>
+    <string name="logBtnSOS">SOS</string>
+    <string name="logLblOlvidasteContraseña">¿Olvidate tu contraseña</string>
+    <!--Olvidaste Contraseña-->
+    <string name="olvTxtRecuperar">Recupera tu contraseña</string>
+    <string name="olvTxtInstrucciones">Coloca tu número de teléfono.\nTe enviaremos un SMS con un código para continuar.</string>
+    <string name="olvTxtTelefono">Número de teléfono</string>
+    <string name="olvBtnEnviar">Enviar</string>
+    <!--Confirmar Codigo-->
+    <string name="cfrTxtVerificar">Verificar tu identidad</string>
+    <string name="cfrTxtInstruccionCodigo">Ingresa el código de seis digitos</string>
+    <string name="cfrTxtCodigo">Codigo</string>
+    <string name="cfrBtnVerificar">Verificar</string>
 </resources>
