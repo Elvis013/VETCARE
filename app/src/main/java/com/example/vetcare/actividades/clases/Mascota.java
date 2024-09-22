@@ -24,7 +24,15 @@ public class Mascota {
         return nombre;
     }
 
+    public String getTipoMascota() {
+        return tipoMascota;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
     public int getFotoResId() {
         return fotoResId;
     }
+
 }

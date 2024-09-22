@@ -38,12 +38,14 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaV
     public void onBindViewHolder(@NonNull MascotaViewHolder holder, int position) {
         Mascota mascota = listaMascotas.get(position);
         holder.nombre.setText(mascota.getNombre());
+        holder.tipo.setText(mascota.getTipoMascota());
         holder.foto.setImageResource(mascota.getFotoResId());
 
         holder.botonSeleccionar.setOnClickListener(v -> {
             // Lógica para seleccionar la mascota y pasar a la siguiente actividad
             Intent intent = new Intent(context, ReservaCitaActivity.class);
             intent.putExtra("mascota_nombre", mascota.getNombre());
+            intent.putExtra("mascota-tipo",mascota.getTipoMascota());
             context.startActivity(intent);
         });
     }
@@ -54,13 +56,14 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaV
     }
 
     public static class MascotaViewHolder extends RecyclerView.ViewHolder {
-        TextView nombre;
+        TextView nombre, tipo;
         ImageView foto;
         Button botonSeleccionar;
 
         public MascotaViewHolder(@NonNull View itemView) {
             super(itemView);
             nombre = itemView.findViewById(R.id.lblNombreSelecMascota);
+            tipo= itemView.findViewById(R.id.lblTipoSelecMascota);
             foto = itemView.findViewById(R.id.imgvFotoSelecMascota);
             botonSeleccionar = itemView.findViewById(R.id.btnSelecMascota);
         }

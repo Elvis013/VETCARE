@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -19,9 +18,16 @@
         <TextView
             android:id="@+id/lblNombreSelecMascota"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
 
+        <TextView
+            android:id="@+id/lblTipoSelecMascota"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/btnSelecMascota"
             android:layout_width="wrap_content"

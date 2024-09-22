@@ -46,8 +46,8 @@ public class SeleccionarMascotaActivity extends AppCompatActivity {
     // Método que crea una lista de mascotas (usado solo para simulación)
     private List<Mascota> obtenerListaDeMascotas() {
         List<Mascota> mascotas = new ArrayList<>();
-        mascotas.add(new Mascota("Max", R.drawable.perro1_95x70));
-        mascotas.add(new Mascota("Wilson", R.drawable.gato1_95x70));
+        mascotas.add(new Mascota(R.drawable.perro1_95x70,4,"Perro","Max"));
+        mascotas.add(new Mascota(R.drawable.gato1_95x70,4,"Gato","Wilson"));
         return mascotas;
     }
 }
