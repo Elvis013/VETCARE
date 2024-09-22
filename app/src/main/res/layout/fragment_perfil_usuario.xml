@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_container_perfilUsuario"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".actividades.fragmentos.perfilUsuarioFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -129,7 +130,8 @@
                     android:layout_height="100dp"
                     android:src="@drawable/perro1_95x70"
                     android:scaleType="centerCrop"
-                    android:contentDescription="Mascota 1" />
+                    android:contentDescription="Mascota 1"
+                    android:background="@color/fondoTransparente"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,9 +155,9 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/gato1_95x70"
-
                     android:scaleType="centerCrop"
-                    android:contentDescription="Mascota 2" />
+                    android:contentDescription="Mascota 2"
+                    android:background="@color/fondoTransparente"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -177,9 +179,9 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/plus_mascota"
-
                     android:scaleType="centerCrop"
-                    android:contentDescription="Añadir mascota" />
+                    android:contentDescription="Añadir mascota"
+                    android:background="@color/fondoTransparente"/>
 
                 <TextView
                     android:layout_width="wrap_content"
