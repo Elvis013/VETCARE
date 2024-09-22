@@ -7,4 +7,73 @@
     android:layout_height="match_parent"
     tools:context=".actividades.OlvidasteContrasenaActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTituloRecuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/olvTxtRecuperar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Subtítulo con instrucciones -->
+    <TextView
+        android:id="@+id/tvInstrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olvTxtInstrucciones"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloRecuperar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Input de número de teléfono -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/olvTxtTelefono"
+        app:layout_constraintTop_toBottomOf="@id/tvInstrucciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón para enviar el número -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@android:color/black"
+            android:text="@string/olvBtnEnviar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhone"
+            app:layout_constraintWidth_percent="0.6" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
