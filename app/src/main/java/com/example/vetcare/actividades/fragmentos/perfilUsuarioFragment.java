@@ -87,7 +87,7 @@ public class perfilUsuarioFragment extends Fragment implements View.OnClickListe
     @Override
     public void onClick(View view) {
 //        if(view.getId() == R.id.btnInfoMascota){
-//            Fragment perfil_Mascota = new perfilMascotaFragment();
+//            Fragment perfil_Mascota = new perfilMascotaFragment()
 //            // Realiza la transacción del fragmento utilizando el FragmentManager
 //            getParentFragmentManager().beginTransaction()
 //                    .replace(R.id.frg_container_perfilUsuario, perfil_Mascota)

@@ -13,10 +13,7 @@
         android:theme="@style/Theme.VETCARE"
         tools:targetApi="31">
         <activity
-            android:name=".actividades.BienvenidaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".actividades.MenuActivity"
+            android:name=".actividades.SeleccionarMascotaActivity"
             android:exported="false" />
         <activity
             android:name=".actividades.ReservaCitaActivity"
