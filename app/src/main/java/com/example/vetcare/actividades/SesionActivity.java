@@ -67,7 +67,8 @@ public class SesionActivity extends AppCompatActivity implements View.OnClickLis
     private void iniciarSesion(String correo, String clave, boolean recordar) {
         // Validar credenciales en base de datos o lógica específica
         if (correo.equals("elvira@upn.pe") && clave.equals("2024-2")) {
-            Intent bienvenida = new Intent(this, ReservaCitaActivity.class);
+            //Intent bienvenida = new Intent(this, ReservaCitaActivity.class);
+            Intent bienvenida = new Intent(this, BienvenidaActivity.class);
             bienvenida.putExtra("nombre", "Elvira Montana");
             startActivity(bienvenida);
             finish();

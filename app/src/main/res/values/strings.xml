@@ -2,6 +2,7 @@
     <string name="app_name">VETCARE</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bieLblSaludo">Hola: </string>
     <!--Usuario-->
     <string name="regTxtNombre">Nombres</string>
     <string name="regTxtApellido">Apellidos</string>
